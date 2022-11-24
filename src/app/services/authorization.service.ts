@@ -11,7 +11,7 @@ export class AuthorizationService {
 
   private loginServerUrl : string = `http://143.110.240.110:9090/metaData/user/login`
   public signInForm : FormGroup = this.formBuilder.group({
-    email : [""],
+    osId : [""],
     password : [""]
   })
   
