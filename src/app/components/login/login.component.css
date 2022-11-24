@@ -1,7 +1,10 @@
 body {
-    background-image: url(/src/assets/BackGround-Images/login-bg.png);
+    background-image: url(../../../assets/BackGround-Images/login-bg.png);
     background-size: cover;
     overflow: hidden;
+     height: 100vh;
+    /*padding: 0px;
+    margin: 0px; */
 }
 
 label {

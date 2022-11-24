@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthorizationService } from 'src/app/services/authorization.service';
 
 @Component({
   selector: 'app-login',
@@ -8,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  logoPath = "assets/Logos/onnet+logo_2.png"
+  loginUserData = {
+    osId : "",
+    password : ""
+  }
+  constructor(private authorization : AuthorizationService) { }
 
   ngOnInit(): void {
   }
 
+  loginUser(){
+    console.log(this.loginUserData)
+    this.authorization.signIn(this.loginUserData)
+    .subscribe(
+      res =>{console.log(res)},
+      err =>{console.log(err)}
+    )
+  }
 }
