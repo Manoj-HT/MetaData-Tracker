@@ -7,6 +7,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { Screen2Component } from './components/screen2/screen2.component';
 import { NavHeadComponent } from './admin/shared/nav-head/nav-head.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavHeadComponent } from './admin/shared/nav-head/nav-head.component';
     HeaderComponent,
     LoginComponent,
     Screen2Component,
-    NavHeadComponent
+    NavHeadComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
